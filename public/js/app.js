@@ -1,5 +1,3 @@
-console.log('Client side javascript is loaded');
-
 const form = document.querySelector('form');
 const loc = document.querySelector('input');
 const p1 = document.getElementById('p1');
