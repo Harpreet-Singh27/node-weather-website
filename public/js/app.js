@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
 
   p1.innerHTML = 'Loading';
   p1.innerHTML = '';
-  fetch(`http://localhost:3000/weather?address=${loc.value}`).then((res) => {
+  fetch(`/weather?address=${loc.value}`).then((res) => {
     res.json().then((data) => {
       if (data.error) {
         p1.innerHTML = data.error;
