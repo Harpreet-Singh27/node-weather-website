@@ -22,7 +22,7 @@ hbs.registerPartials(partialsPath);
 
 app.get('', (req, res) => {
   res.render('index', {
-    title: 'Index Page',
+    title: 'Weather',
     name: 'Harpreet Singh',
   });
 });
