@@ -4,7 +4,7 @@ const geocode = (address, callback) => {
   const url =
     'https://api.mapbox.com/geocoding/v5/mapbox.places/' +
     encodeURIComponent(address) +
-    '.json?proximity=-74.70850,40.78375&access_token=pk.eyJ1IjoiaGFwcHlzYWhvdGE5OCIsImEiOiJja2loNnh2bjUwNHJnMnJtd2R2OWYzbW1qIn0.HW9HxOeXJbJPKvtpRIKP8A&limit=1';
+    '.json?proximity=-74.70850,40.78375&access_token={PutYourOwnAccessToken}';
 
   request({ url: url, json: true }, (error, response) => {
     if (error) {
